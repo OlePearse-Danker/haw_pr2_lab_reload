@@ -13,6 +13,11 @@ public class Cat extends Animal {
     private int upperbodyHeight;
     private int upperbodyWidth;
 
+    private Legs legs;
+    private int legsHeight;
+    private int legsWidth;
+
+
     public Cat(int x, int y, int width) {
 
         this.setWidth(width);
@@ -22,7 +27,6 @@ public class Cat extends Animal {
 
         this.headWidth = (int) (width * 0.3);
         this.headHeight = this.headWidth;
-
         this.head = new Head(x, y + (int) (headHeight/3.), headWidth, headHeight);
 
         final int tailSpacingPlacerholder = (int) (this.getWidth() * 0.2);
@@ -32,6 +36,13 @@ public class Cat extends Animal {
         final int bodyOffsetY = (int) (this.head.getCoordinates().getY() + (this.head.getHeight() * 1./3.));
         this.upperbody = new Upperbody(x + headWidth/2, bodyOffsetY, upperbodyWidth, upperbodyHeight);
 
+        this.legsWidth = (int) (this.getWidth() * 0.07);
+        this.legsHeight = (int) (this.getHeight() * 0.22);
+
+        final int legOffsetY = (int) (this.upperbody.getCoordinates().getY() + (this.upperbody.getHeight()));
+        this.legs = new Legs(x + upperbodyWidth/2, legOffsetY, legsWidth, legsHeight);
+
+
     }
 
     public void draw() {
@@ -39,6 +50,7 @@ public class Cat extends Animal {
         // coordinates for the upper_body
         upperbody.draw();
         head.draw();
+        legs.draw();
 
         // drawing the bounding box
         this.drawBoundingBox();
