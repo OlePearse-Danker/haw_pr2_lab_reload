@@ -27,18 +27,10 @@ public class DrawingArea extends JPanel {
         Grid grid = new Grid(25, 1000, 1000);
         grid.draw();
 
-        Cat cat = new Cat(400, 250, 600);
-        cat.draw();
-/*        // here comes your code...
+/*        Cat cat = new Cat(400, 250, 100);
+        cat.draw();*/
 
-        // please, don't use the following commands in this file
-        // use them ONLY in your "drawAt"-methods of YOUR domain classes!!!
-        Drawing.pen().drawLine(10, 400, 400, 400);
-        Drawing.pen().drawRect(300, 300, 50, 50);
-        Drawing.pen().setColor(Color.BLUE);
-        Drawing.pen().fillRect(400, 500, 80, 30);
-        Drawing.pen().drawOval(200, 500, 50, 50);
-        // you find further commands at oracle docs for Java 1.8:
-        // https://docs.oracle.com/javase/8/docs/api/java/awt/Graphics.html*/
+        Scene scene = new Scene();
+//        scene.draw();
     }
 }

@@ -2,7 +2,7 @@ package lab0;
 
 import java.awt.*;
 
-public class Cat extends Animal {
+public class Cat extends Animal implements LocatedRectangle{
 
     private Head head;
     private int headHeight;
@@ -68,4 +68,18 @@ public class Cat extends Animal {
         this.drawBoundingBox();
     }
 
+    @Override
+    public Point address() {
+        return this.getCoordinates();
+    }
+
+    @Override
+    public int width() {
+        return this.getWidth();
+    }
+
+    @Override
+    public int height() {
+        return this.getHeight();
+    }
 }
