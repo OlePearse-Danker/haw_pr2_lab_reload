@@ -27,10 +27,9 @@ public class DrawingArea extends JPanel {
         Grid grid = new Grid(25, 1000, 1000);
         grid.draw();
 
-/*        Cat cat = new Cat(400, 250, 100);
-        cat.draw();*/
-
         Scene scene = new Scene();
-//        scene.draw();
+
+
+
     }
 }

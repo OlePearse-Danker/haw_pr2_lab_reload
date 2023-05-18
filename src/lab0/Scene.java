@@ -11,8 +11,8 @@ public class Scene {
     public Scene() {
         this.cats = new ArrayList<Cat>(); // Initialize the "cats" ArrayList
 
-        // Add 20 cats
-        for (int i = 0; i < 20; i++) {
+        // Add n cats
+        for (int i = 0; i < this.catCount; i++) {
             this.addCat();
         }
 
@@ -21,30 +21,40 @@ public class Scene {
 
     // Method to add a new cat to the scene
     public void addCat() {
-        int width = 100;
-        int x = RandomNumber.between(100, 800);
-        int y = RandomNumber.between(100, 500);
+        int width = RandomNumber.between(100, 620);
+        Dimension screenSize = ScreenInterface.getScreenSize();
+        int x = RandomNumber.between(0, screenSize.width);
+        int y = RandomNumber.between(0, screenSize.height);
 
         // Create a new Cat object with the random position and size;
         Cat newCat = new Cat(x, y, width);
 
+        // Center cat
+        if (this.centerCat) {
+            width = 500;
+            newCat.setWidth(width);
+            newCat.calculateAndSetHeight();
+            int height = newCat.getHeight();
+
+            int centerX = (int) (screenSize.width / 2.);
+            int centerY = (int) (screenSize.height / 2.);
+
+            x = (int) (centerX - (width / 2.));
+            y = (int) (centerY - (height / 2.));
+
+            newCat = new Cat(x, y, width);
+        }
+
+        // Generate a new random color
+        final int colorR = RandomNumber.between(0, 255);
+        final int colorG = RandomNumber.between(0, 255);
+        final int colorB = RandomNumber.between(0, 255);
+
+        Color primaryColor = new Color(colorR, colorG, colorB);
+        newCat.setPrimaryColor(primaryColor);
+
         // Append cat to the list of cats
         this.cats.add(newCat);
-//
-//        boolean intersects = false;
-//
-//        // Check if the new cat overlaps with any of the existing cats
-//        for (Cat currentCat : this.cats) {
-//            if (currentCat.intersects(newCat)) {
-//                intersects = true;
-//                break;
-//            }
-//        }
-//
-//        // If the new cat does not overlap with any existing cats, add it to the list
-//        if (!intersects) {
-//            cats.add(newCat);
-//        }
     }
 
     public void draw() {

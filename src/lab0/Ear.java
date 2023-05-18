@@ -2,23 +2,12 @@ package lab0;
 
 import java.awt.*;
 
-public class Upperbody extends BoundingBox{
-
-    private Color primaryColor;
-
-    public Upperbody(int x, int y, int width, int height) {
+public class Ear extends BoundingBox {
+    public Ear(int x, int y, int width, int height) {
 
         this.setWidth(width);
         this.setHeight(height);
         this.setCoordinates(new Point(x, y));
-    }
-
-    public void setPrimaryColor(Color color) {
-        this.primaryColor = color;
-    }
-
-    public Color getPrimaryColor() {
-        return this.primaryColor;
     }
 
     public void draw() {
@@ -30,12 +19,15 @@ public class Upperbody extends BoundingBox{
         int height = this.getHeight();
 
 
-        // drawing the upper body
-        Drawing.pen().setColor(Color.ORANGE);
+        Drawing.pen().setColor(Color.BLACK);
 
         Drawing.pen().fillOval(x, y, width, height);
 
+
         // drawing the bounding box
-        this.drawBoundingBox();
+        //this.drawBoundingBox();
     }
+
 }
+
+

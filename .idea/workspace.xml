@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="Added Intersects method that avoids Objects from overlapping">
+    <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="Added JPanel with Button and Splitpane">
+      <change afterPath="$PROJECT_DIR$/src/lab0/Ear.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/DrawingArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/DrawingArea.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab0/DrawingTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/DrawingTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/Head.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Head.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/Upperbody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Upperbody.java" afterDir="false" />
+    </list>
+    <list id="cbc0464e-b01f-46b4-a61f-61df83211a35" name="Changes by christopherklix" comment="">
+      <change beforePath="$PROJECT_DIR$/src/lab0/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/Upperbody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Upperbody.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +34,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/lab0/Upperbody.java">
+      <ranges>
+        <range start1="5" end1="5" start2="5" end2="7" changelist="d0255374-cd20-4468-8280-a88412558541" />
+        <range start1="7" end1="8" start2="9" end2="9" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
+        <range start1="11" end1="11" start2="12" end2="14" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
+        <range start1="12" end1="12" start2="15" end2="24" changelist="d0255374-cd20-4468-8280-a88412558541" />
+        <range start1="22" end1="23" start2="34" end2="35" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/lab0/Scene.java">
+      <ranges>
+        <range start1="8" end1="9" start2="8" end2="14" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
+        <range start1="11" end1="12" start2="16" end2="22" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
+        <range start1="13" end1="15" start2="23" end2="25" changelist="d0255374-cd20-4468-8280-a88412558541" />
+        <range start1="23" end1="26" start2="33" end2="37" changelist="d0255374-cd20-4468-8280-a88412558541" />
+        <range start1="29" end1="29" start2="40" end2="64" changelist="d0255374-cd20-4468-8280-a88412558541" />
+        <range start1="32" end1="47" start2="67" end2="67" changelist="d0255374-cd20-4468-8280-a88412558541" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -33,19 +64,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "jdk.selected.JAVA_MODULE": "20",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.general",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="DrawingTool" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="lab0.DrawingTool" />
@@ -66,7 +101,9 @@
       <workItem from="1684332661649" duration="10000" />
       <workItem from="1684333253119" duration="11377000" />
       <workItem from="1684415397068" duration="3908000" />
-      <workItem from="1684419318753" duration="4421000" />
+      <workItem from="1684419318753" duration="6096000" />
+      <workItem from="1684425489093" duration="673000" />
+      <workItem from="1684426177546" duration="4096000" />
     </task>
     <task id="LOCAL-00001" summary="added legs">
       <created>1684344631681</created>
@@ -89,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684422377642</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added JPanel with Button and Splitpane">
+      <created>1684423831688</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684423831688</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +143,7 @@
     <MESSAGE value="added legs" />
     <MESSAGE value="Added Scalable Legs" />
     <MESSAGE value="Added Intersects method that avoids Objects from overlapping" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Intersects method that avoids Objects from overlapping" />
+    <MESSAGE value="Added JPanel with Button and Splitpane" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added JPanel with Button and Splitpane" />
   </component>
 </project>

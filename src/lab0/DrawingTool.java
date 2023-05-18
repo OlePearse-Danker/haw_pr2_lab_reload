@@ -15,7 +15,7 @@ public class DrawingTool extends JFrame {
         // New SplitPane
         JSplitPane splitPane = new JSplitPane();
         splitPane.setOrientation(JSplitPane.VERTICAL_SPLIT);
-        splitPane.setDividerLocation(500);
+        splitPane.setDividerLocation(700);
 
         //constructDrawingArea();
         drawing = new DrawingArea();
