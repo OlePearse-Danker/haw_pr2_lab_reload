@@ -19,6 +19,8 @@ import java.awt.*;
 @SuppressWarnings("serial")
 public class DrawingArea extends JPanel {
 
+    private Scene scene;
+
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
@@ -27,9 +29,10 @@ public class DrawingArea extends JPanel {
         Grid grid = new Grid(25, 1000, 1000);
         grid.draw();
 
-        Scene scene = new Scene();
+        this.scene = new Scene();
+    }
 
-
-
+    public Scene getScene() {
+        return this.scene;
     }
 }
