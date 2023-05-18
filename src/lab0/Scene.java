@@ -15,8 +15,6 @@ public class Scene {
 
     private int catCount;
 
-    private int horizon;
-
     public Scene() {
         // Initialize the "cats" ArrayList
         this.cats = new ArrayList<Cat>();
@@ -24,9 +22,6 @@ public class Scene {
         this.catCount = 0;
 
         this.centerCat = false;
-
-        Dimension screenSize = ScreenInterface.getScreenSize();
-        this.horizon = screenSize.height / 2 - 200;
 
         // Add n cats
         int catsToDraw = 30;
@@ -43,31 +38,9 @@ public class Scene {
         System.out.println("Add new cat.");
         Dimension screenSize = ScreenInterface.getScreenSize();
         int x = RandomNumber.between(0, screenSize.width);
-        int y = RandomNumber.between(this.horizon, screenSize.height);
+        int y = RandomNumber.between(0, screenSize.height);
 
-        // Distance to the horizon
-        int distanceToHorizon = y - this.horizon;
-
-        // Max distance from the horizon
-        int maxDistanceToHorizon = screenSize.height - this.horizon;
-
-        final int smallestWidth = 10;
-        final int largestWidth = 200;
-
-        // Difference in width
-        int widthDifference = largestWidth - smallestWidth;
-
-        // Randomness factor
-        final int randomnessWidth = (RandomNumber.between(1, 5));
-
-        // Calculate width based on distance to horizon
-        int width = (int) (smallestWidth + (widthDifference * ((double) distanceToHorizon / (double) maxDistanceToHorizon)));
-
-        // Add randomness
-        width += RandomNumber.between(-randomnessWidth, randomnessWidth);
-
-        // Recalculate width in an exponential way
-        width = (int) Math.pow(width, 3./2.);
+        int width = RandomNumber.between(100, 200);
 
         // Create a new Cat object with the random position and size;
         Cat newCat = new Cat(x, y, width);
@@ -110,11 +83,6 @@ public class Scene {
     public void draw() {
         System.out.println("Draw scene.");
         System.out.println("Cat count: " + this.cats.size());
-
-        // Draw horizontal line
-        Dimension screenSize = ScreenInterface.getScreenSize();
-        Drawing.pen().setColor(Color.BLACK);
-        Drawing.pen().drawLine(0, this.horizon, screenSize.width, this.horizon);
 
         ArrayList<Cat> drawnCats = new ArrayList<Cat>();
         ArrayList<Cat> catsStillToDraw = new ArrayList<Cat>();
