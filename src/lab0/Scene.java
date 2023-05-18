@@ -24,7 +24,31 @@ public class Scene {
         int width = RandomNumber.between(100, 620);
         Dimension screenSize = ScreenInterface.getScreenSize();
         int x = RandomNumber.between(0, screenSize.width);
-        int y = RandomNumber.between(0, screenSize.height);
+        int y = RandomNumber.between(this.horizon, screenSize.height);
+
+        // Distance to the horizon
+        int distanceToHorizon = y - this.horizon;
+
+        // Max distance from the horizon
+        int maxDistanceToHorizon = screenSize.height - this.horizon;
+
+        final int smallestWidth = 10;
+        final int largestWidth = 200;
+
+        // Difference in width
+        int widthDifference = largestWidth - smallestWidth;
+
+        // Randomness factor
+        final int randomnessWidth = (RandomNumber.between(1, 5));
+
+        // Calculate width based on distance to horizon
+        int width = (int) (smallestWidth + (widthDifference * ((double) distanceToHorizon / (double) maxDistanceToHorizon)));
+
+        // Add randomness
+        width += RandomNumber.between(-randomnessWidth, randomnessWidth);
+
+        // Recalculate width in an exponential way
+        width = (int) Math.pow(width, 3./2.);
 
         // Create a new Cat object with the random position and size;
         Cat newCat = new Cat(x, y, width);

@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="Added functionality of centering the cat /variations in size and color of the cat">
-      <change afterPath="$PROJECT_DIR$/src/lab0/Eye.java" afterDir="false" />
+    <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="Added possibility of redrawing the cat per button/ added eyes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/DrawingTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/DrawingTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/Head.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Head.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Scene.java" afterDir="false" />
     </list>
     <list id="cbc0464e-b01f-46b4-a61f-61df83211a35" name="Changes by christopherklix" comment="">
       <change beforePath="$PROJECT_DIR$/src/lab0/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Cat.java" afterDir="false" />
@@ -34,11 +32,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/lab0/DrawingTool.java">
+    <file path="$PROJECT_DIR$/src/lab0/Scene.java">
       <ranges>
-        <range start1="6" end1="6" start2="6" end2="8" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
-        <range start1="28" end1="29" start2="30" end2="41" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
-        <range start1="52" end1="53" start2="64" end2="65" changelist="d0255374-cd20-4468-8280-a88412558541" />
+        <range start1="2" end1="2" start2="2" end2="4" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
+        <range start1="8" end1="9" start2="10" end2="18" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
+        <range start1="11" end1="12" start2="20" end2="29" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
+        <range start1="14" end1="15" start2="31" end2="34" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
+        <range start1="23" end1="24" start2="42" end2="43" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
+        <range start1="26" end1="27" start2="45" end2="70" changelist="d0255374-cd20-4468-8280-a88412558541" />
+        <range start1="57" end1="57" start2="100" end2="103" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
+        <range start1="58" end1="58" start2="104" end2="108" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
+        <range start1="60" end1="60" start2="110" end2="118" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
+        <range start1="64" end1="67" start2="122" end2="123" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
       </ranges>
     </file>
   </component>
@@ -90,7 +95,7 @@
       <workItem from="1684415397068" duration="3908000" />
       <workItem from="1684419318753" duration="6096000" />
       <workItem from="1684425489093" duration="673000" />
-      <workItem from="1684426177546" duration="7751000" />
+      <workItem from="1684426177546" duration="8679000" />
     </task>
     <task id="LOCAL-00001" summary="added legs">
       <created>1684344631681</created>
@@ -127,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684431369394</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added possibility of redrawing the cat per button/ added eyes">
+      <created>1684434951767</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684434951767</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +151,7 @@
     <MESSAGE value="Added Intersects method that avoids Objects from overlapping" />
     <MESSAGE value="Added JPanel with Button and Splitpane" />
     <MESSAGE value="Added functionality of centering the cat /variations in size and color of the cat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added functionality of centering the cat /variations in size and color of the cat" />
+    <MESSAGE value="Added possibility of redrawing the cat per button/ added eyes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added possibility of redrawing the cat per button/ added eyes" />
   </component>
 </project>
