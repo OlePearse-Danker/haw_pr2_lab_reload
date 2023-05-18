@@ -4,6 +4,8 @@ package lab0;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 @SuppressWarnings("serial")
 public class DrawingTool extends JFrame {
@@ -26,7 +28,17 @@ public class DrawingTool extends JFrame {
         gUIPanel.setBackground(Color.BLACK);
 
         // Add new button to the panel
-        JButton button = new JButton("Add Cat");
+        JButton button = new JButton("Redraw the Cat");
+        button.addActionListener(e -> {
+            System.out.println("--------");
+            System.out.println("Button pressed.");
+            Scene scene = drawing.getScene();
+            scene.addCat();
+            scene.draw();
+            System.out.println("--------");
+            drawing.revalidate();
+            drawing.repaint();
+        });
         gUIPanel.add(button);
 
         // Add panels to the split pane

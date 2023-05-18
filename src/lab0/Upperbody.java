@@ -7,10 +7,11 @@ public class Upperbody extends BoundingBox{
     private Color primaryColor;
 
     public Upperbody(int x, int y, int width, int height) {
-
         this.setWidth(width);
         this.setHeight(height);
         this.setCoordinates(new Point(x, y));
+
+        this.primaryColor = Color.ORANGE;
     }
 
     public void setPrimaryColor(Color color) {
@@ -31,7 +32,7 @@ public class Upperbody extends BoundingBox{
 
 
         // drawing the upper body
-        Drawing.pen().setColor(Color.ORANGE);
+        Drawing.pen().setColor(this.primaryColor);
 
         Drawing.pen().fillOval(x, y, width, height);
 

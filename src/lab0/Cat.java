@@ -8,7 +8,6 @@ public class Cat extends Animal implements LocatedRectangle{
     private int headHeight;
     private int headWidth;
 
-
     private Upperbody upperbody;
     private int upperbodyHeight;
     private int upperbodyWidth;
@@ -20,15 +19,16 @@ public class Cat extends Animal implements LocatedRectangle{
 
     private Leg Leftleg;
 
-
-
+    private Color primaryColor;
 
     public Cat(int x, int y, int width) {
 
         this.setWidth(width);
-        double height = width * 5./7.;
-        this.setHeight((int) height);
+        this.calculateAndSetHeight();
+
         this.setCoordinates(new Point(x, y));
+
+        this.primaryColor = Color.BLACK;
 
         this.headWidth = (int) (width * 0.3);
         this.headHeight = this.headWidth;
@@ -36,10 +36,11 @@ public class Cat extends Animal implements LocatedRectangle{
 
         final int tailSpacingPlacerholder = (int) (this.getWidth() * 0.2);
         this.upperbodyWidth = this.getWidth() - headWidth/2 - tailSpacingPlacerholder;
-        this.upperbodyHeight = (int) (height * 0.5);
+        this.upperbodyHeight = (int) (this.getHeight() * 0.5);
 
         final int bodyOffsetY = (int) (this.head.getCoordinates().getY() + (this.head.getHeight() * 1./3.));
         this.upperbody = new Upperbody(x + headWidth/2, bodyOffsetY, upperbodyWidth, upperbodyHeight);
+        this.upperbody.setPrimaryColor(this.primaryColor);
 
         this.legsWidth = (int) (this.getWidth() * 0.07);
         this.legsHeight = (int) (this.getHeight() * 0.22);
@@ -51,8 +52,11 @@ public class Cat extends Animal implements LocatedRectangle{
 
         // left leg
         this.Leftleg = new Leg((int) (x + upperbodyWidth * 0.85), legOffsetY, legsWidth, legsHeight);
+    }
 
-
+    public void calculateAndSetHeight() {
+        int height = (int) (this.getWidth() * 5./7.);
+        this.setHeight(height);
     }
 
     public void draw() {
@@ -81,5 +85,14 @@ public class Cat extends Animal implements LocatedRectangle{
     @Override
     public int height() {
         return this.getHeight();
+    }
+
+    public void setPrimaryColor(Color color) {
+        this.primaryColor = color;
+        this.upperbody.setPrimaryColor(this.primaryColor);
+    }
+
+    public Color getPrimaryColor() {
+        return this.primaryColor;
     }
 }
