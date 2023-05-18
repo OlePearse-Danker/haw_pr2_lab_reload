@@ -2,9 +2,9 @@ package lab0;
 
 import java.awt.*;
 
-public class Legs extends BoundingBox {
+public class Leg extends BoundingBox {
 
-    public Legs(int x, int y, int width, int height) {
+    public Leg(int x, int y, int width, int height) {
 
         this.setWidth(width);
         this.setHeight(height);
@@ -24,13 +24,10 @@ public class Legs extends BoundingBox {
 
         Drawing.pen().fillRect(x, y, width, height);
 
-        // eigene Klase für left leg und right leg machen
-
 
         // drawing the bounding box
         this.drawBoundingBox();
     }
 
 }
-
 

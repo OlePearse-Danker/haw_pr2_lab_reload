@@ -28,6 +28,6 @@ public class DrawingTool extends JFrame {
     }
 
     public static void main(String[] args) {
-        new DrawingTool("Draw a house");
+        new DrawingTool("This is a Cat!");
     }
 }

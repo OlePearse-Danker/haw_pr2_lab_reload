@@ -27,7 +27,7 @@ public class DrawingArea extends JPanel {
         Grid grid = new Grid(25, 1000, 1000);
         grid.draw();
 
-        Cat cat = new Cat(400, 250, 700);
+        Cat cat = new Cat(400, 250, 600);
         cat.draw();
 /*        // here comes your code...
 
