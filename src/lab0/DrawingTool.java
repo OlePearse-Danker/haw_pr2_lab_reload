@@ -50,6 +50,6 @@ public class DrawingTool extends JFrame {
     }
 
     public static void main(String[] args) {
-        new DrawingTool("This is a Cat!");
+        new DrawingTool("I am a Cat!");
     }
 }

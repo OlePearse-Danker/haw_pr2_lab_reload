@@ -12,19 +12,32 @@ public class Head extends BoundingBox{
 
     private Ear rightEar;
 
+    private Eye leftEye;
+
+    private int eyeWidth;
+    private int eyeHeight;
+
+    private Eye rightEye;
+
     public Head(int x, int y, int width, int height) {
 
         this.setWidth(width);
         this.setHeight(height);
         this.setCoordinates(new Point(x, y));
 
-
+        // setting the width and height of the ears
         this.earWidth = width / 4;
         this.earHeight = height / 2;
 
-        this.leftEar = new Ear(x, y, earWidth, earHeight);
-        this.rightEar = new Ear(x + width - earWidth, y, earWidth, earHeight);
+        this.leftEar = new Ear(x, y - earWidth, earWidth, earHeight);
+        this.rightEar = new Ear(x + width - earWidth, y - earWidth, earWidth, earHeight);
 
+        // setting the width and height of the eyes
+        this.eyeWidth = width / 5;
+        this.eyeHeight = height / 5;
+
+        this.leftEye = new Eye((int) (x + (1 * eyeWidth)), (int) (y + 1.2 * earWidth), eyeWidth, eyeHeight);
+        this.rightEye = new Eye((int) (x + width - (2 * eyeWidth)), (int) (y + 1.2 * earWidth), eyeWidth, eyeHeight);
     }
 
     public void draw() {
@@ -36,12 +49,15 @@ public class Head extends BoundingBox{
         int height = this.getHeight();
 
 
-        Drawing.pen().setColor(Color.BLACK);
+        Drawing.pen().setColor(Color.orange);
 
         Drawing.pen().fillOval(x, y, width, height);
 
         leftEar.draw();
         rightEar.draw();
+
+        leftEye.draw();
+        rightEye.draw();
 
         // drawing the bounding box
         this.drawBoundingBox();

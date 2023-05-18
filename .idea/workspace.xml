@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="Added JPanel with Button and Splitpane">
-      <change afterPath="$PROJECT_DIR$/src/lab0/Ear.java" afterDir="false" />
+    <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="Added functionality of centering the cat /variations in size and color of the cat">
+      <change afterPath="$PROJECT_DIR$/src/lab0/Eye.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/DrawingArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/DrawingArea.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab0/DrawingTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/DrawingTool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab0/Head.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Head.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Scene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/Upperbody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Upperbody.java" afterDir="false" />
     </list>
     <list id="cbc0464e-b01f-46b4-a61f-61df83211a35" name="Changes by christopherklix" comment="">
       <change beforePath="$PROJECT_DIR$/src/lab0/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/DrawingArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/DrawingArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/DrawingTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/DrawingTool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab0/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Scene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab0/Upperbody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Upperbody.java" afterDir="false" />
     </list>
@@ -35,23 +34,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/lab0/Upperbody.java">
+    <file path="$PROJECT_DIR$/src/lab0/DrawingTool.java">
       <ranges>
-        <range start1="5" end1="5" start2="5" end2="7" changelist="d0255374-cd20-4468-8280-a88412558541" />
-        <range start1="7" end1="8" start2="9" end2="9" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
-        <range start1="11" end1="11" start2="12" end2="14" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
-        <range start1="12" end1="12" start2="15" end2="24" changelist="d0255374-cd20-4468-8280-a88412558541" />
-        <range start1="22" end1="23" start2="34" end2="35" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/lab0/Scene.java">
-      <ranges>
-        <range start1="8" end1="9" start2="8" end2="14" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
-        <range start1="11" end1="12" start2="16" end2="22" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
-        <range start1="13" end1="15" start2="23" end2="25" changelist="d0255374-cd20-4468-8280-a88412558541" />
-        <range start1="23" end1="26" start2="33" end2="37" changelist="d0255374-cd20-4468-8280-a88412558541" />
-        <range start1="29" end1="29" start2="40" end2="64" changelist="d0255374-cd20-4468-8280-a88412558541" />
-        <range start1="32" end1="47" start2="67" end2="67" changelist="d0255374-cd20-4468-8280-a88412558541" />
+        <range start1="6" end1="6" start2="6" end2="8" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
+        <range start1="28" end1="29" start2="30" end2="41" changelist="cbc0464e-b01f-46b4-a61f-61df83211a35" />
+        <range start1="52" end1="53" start2="64" end2="65" changelist="d0255374-cd20-4468-8280-a88412558541" />
       </ranges>
     </file>
   </component>
@@ -103,7 +90,7 @@
       <workItem from="1684415397068" duration="3908000" />
       <workItem from="1684419318753" duration="6096000" />
       <workItem from="1684425489093" duration="673000" />
-      <workItem from="1684426177546" duration="4096000" />
+      <workItem from="1684426177546" duration="7751000" />
     </task>
     <task id="LOCAL-00001" summary="added legs">
       <created>1684344631681</created>
@@ -133,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684423831688</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added functionality of centering the cat /variations in size and color of the cat">
+      <created>1684431369394</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684431369394</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +138,7 @@
     <MESSAGE value="Added Scalable Legs" />
     <MESSAGE value="Added Intersects method that avoids Objects from overlapping" />
     <MESSAGE value="Added JPanel with Button and Splitpane" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added JPanel with Button and Splitpane" />
+    <MESSAGE value="Added functionality of centering the cat /variations in size and color of the cat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added functionality of centering the cat /variations in size and color of the cat" />
   </component>
 </project>
