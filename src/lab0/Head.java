@@ -19,6 +19,11 @@ public class Head extends BoundingBox{
 
     private Eye rightEye;
 
+    private Mouth mouth;
+
+    private int mouthWidth;
+    private int mouthHeight;
+
     public Head(int x, int y, int width, int height) {
 
         this.setWidth(width);
@@ -38,6 +43,11 @@ public class Head extends BoundingBox{
 
         this.leftEye = new Eye((int) (x + (1 * eyeWidth)), (int) (y + 1.2 * earWidth), eyeWidth, eyeHeight);
         this.rightEye = new Eye((int) (x + width - (2 * eyeWidth)), (int) (y + 1.2 * earWidth), eyeWidth, eyeHeight);
+
+
+        this.mouthWidth = width / 5;
+        this.mouthHeight = height / 5;
+        this.mouth = new Mouth((int) ((int) (x + 0.5 * width) - (0.5 * mouthWidth)), (int) (y + 3 * mouthWidth), mouthWidth, mouthHeight);
     }
 
     public void draw() {
@@ -58,6 +68,8 @@ public class Head extends BoundingBox{
 
         leftEye.draw();
         rightEye.draw();
+
+        mouth.draw();
 
         // drawing the bounding box
         this.drawBoundingBox();

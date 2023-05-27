@@ -21,7 +21,8 @@ public class Scene {
 
         this.catCount = 0;
 
-        this.centerCat = false;
+        // change this to true if you want to center the cat
+        this.centerCat = true;
 
         // Add n cats
         int catsToDraw = 30;
@@ -40,6 +41,7 @@ public class Scene {
         int x = RandomNumber.between(0, screenSize.width);
         int y = RandomNumber.between(0, screenSize.height);
 
+        // change this to set size of cat
         int width = RandomNumber.between(100, 200);
 
         // Create a new Cat object with the random position and size;
