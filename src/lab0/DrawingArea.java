@@ -27,7 +27,7 @@ public class DrawingArea extends JPanel {
         Drawing.set(g);
 
         Grid grid = new Grid(25, 1000, 1000);
-        grid.draw();
+        // grid.draw();
 
         this.scene = new Scene();
     }

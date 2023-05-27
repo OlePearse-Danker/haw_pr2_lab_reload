@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/src/lab0/Mouth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab0/Tail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab0/Whisker.java" afterDir="false" />
+    <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="Added Whisker">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/DrawingTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/DrawingTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/Head.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Head.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/DrawingArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/DrawingArea.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab0/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/Tail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Tail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/Upperbody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Upperbody.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +103,7 @@
       <workItem from="1684773155956" duration="4863000" />
       <workItem from="1685188130396" duration="1054000" />
       <workItem from="1685189195885" duration="22000" />
-      <workItem from="1685189227233" duration="7105000" />
+      <workItem from="1685189227233" duration="8127000" />
     </task>
     <task id="LOCAL-00001" summary="added legs">
       <created>1684344631681</created>
@@ -156,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684436611325</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added Whisker">
+      <created>1685199978115</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1685199978115</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +197,7 @@
     <MESSAGE value="Added JPanel with Button and Splitpane" />
     <MESSAGE value="Added functionality of centering the cat /variations in size and color of the cat" />
     <MESSAGE value="Added possibility of redrawing the cat per button/ added eyes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added possibility of redrawing the cat per button/ added eyes" />
+    <MESSAGE value="Added Whisker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Whisker" />
   </component>
 </project>
