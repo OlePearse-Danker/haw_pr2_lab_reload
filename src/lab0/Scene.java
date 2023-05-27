@@ -22,7 +22,7 @@ public class Scene {
         this.catCount = 0;
 
         // change this to true if you want to center the cat
-        this.centerCat = false;
+        this.centerCat = true;
 
         // Add n cats
         int catsToDraw = 30;

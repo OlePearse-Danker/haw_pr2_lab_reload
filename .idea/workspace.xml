@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="Added Whisker">
+    <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="Added Tail">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/DrawingArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/DrawingArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/Foot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Foot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/Leg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Leg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab0/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Scene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/Tail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Tail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/Upperbody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Upperbody.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +102,7 @@
       <workItem from="1684773155956" duration="4863000" />
       <workItem from="1685188130396" duration="1054000" />
       <workItem from="1685189195885" duration="22000" />
-      <workItem from="1685189227233" duration="8127000" />
+      <workItem from="1685189227233" duration="8964000" />
     </task>
     <task id="LOCAL-00001" summary="added legs">
       <created>1684344631681</created>
@@ -161,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685199978115</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added Tail">
+      <created>1685201168885</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685201168885</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +204,7 @@
     <MESSAGE value="Added functionality of centering the cat /variations in size and color of the cat" />
     <MESSAGE value="Added possibility of redrawing the cat per button/ added eyes" />
     <MESSAGE value="Added Whisker" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Whisker" />
+    <MESSAGE value="Added Tail" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Tail" />
   </component>
 </project>

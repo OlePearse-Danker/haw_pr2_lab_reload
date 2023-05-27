@@ -4,11 +4,22 @@ import java.awt.*;
 
 public class Leg extends BoundingBox {
 
+    private Foot Feet;
+
+    private int footWidth;
+    private int footHeight;
+
+
     public Leg(int x, int y, int width, int height) {
 
         this.setWidth(width);
         this.setHeight(height);
         this.setCoordinates(new Point(x, y));
+
+        this.footWidth = (int) (width * 1.525);
+        this.footHeight = height / 3;
+        this.Feet = new Foot ((int) (x - 0.5 * width), (int) (y + 0.85 * height), footWidth, footHeight);
+
     }
 
     public void draw() {
@@ -24,9 +35,11 @@ public class Leg extends BoundingBox {
 
         Drawing.pen().fillRect(x, y, width, height);
 
+        Feet.draw();
+
 
         // drawing the bounding box
-        this.drawBoundingBox();
+        // this.drawBoundingBox();
     }
 
 }
