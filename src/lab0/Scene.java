@@ -22,7 +22,7 @@ public class Scene {
         this.catCount = 0;
 
         // change this to true if you want to center the cat
-        this.centerCat = true;
+        this.centerCat = false;
 
         // Add n cats
         int catsToDraw = 30;
@@ -30,8 +30,6 @@ public class Scene {
         for (int i = 0; i < catsToDraw; i++) {
             this.addCat();
         }
-
-        this.draw();
     }
 
     // Method to add a new cat to the scene
@@ -86,6 +84,11 @@ public class Scene {
         System.out.println("Draw scene.");
         System.out.println("Cat count: " + this.cats.size());
 
+        // Draw all cats
+        this.drawCats();
+    }
+
+    private void drawCats() {
         ArrayList<Cat> drawnCats = new ArrayList<Cat>();
         ArrayList<Cat> catsStillToDraw = new ArrayList<Cat>();
 
@@ -95,6 +98,10 @@ public class Scene {
         // 1. edge case: no cats are drawn yet
 
         // Get first cat from the list
+        if (this.cats.size() == 0) {
+            return;
+        }
+
         Cat firstCat = this.cats.get(0);
 
         // Draw the first cat
@@ -128,7 +135,10 @@ public class Scene {
         }
     }
 
-
+    public void removeAllCats() {
+        System.out.println("Remove all cats.");
+        this.cats.clear();
+    }
 }
 
 

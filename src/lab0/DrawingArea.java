@@ -21,15 +21,21 @@ public class DrawingArea extends JPanel {
 
     private Scene scene;
 
+    public DrawingArea() {
+        super();
+        this.scene = new Scene();
+    }
+
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         Drawing.set(g);
 
         Grid grid = new Grid(25, 1000, 1000);
+        if (this.scene != null) {
+            this.scene.draw();
+        }
         // grid.draw();
-
-        this.scene = new Scene();
     }
 
     public Scene getScene() {
