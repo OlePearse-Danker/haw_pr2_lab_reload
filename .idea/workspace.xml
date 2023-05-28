@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="Added Feet">
+    <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="Added buttons to remove all objects from scene and close the program">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/DrawingArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/DrawingArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/DrawingTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/DrawingTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Scene.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +99,7 @@
       <workItem from="1684773155956" duration="4863000" />
       <workItem from="1685188130396" duration="1054000" />
       <workItem from="1685189195885" duration="22000" />
-      <workItem from="1685189227233" duration="16287000" />
+      <workItem from="1685189227233" duration="16633000" />
     </task>
     <task id="LOCAL-00001" summary="added legs">
       <created>1684344631681</created>
@@ -174,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685202126240</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added buttons to remove all objects from scene and close the program">
+      <created>1685211247294</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685211247294</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +217,8 @@
     <MESSAGE value="Added Whisker" />
     <MESSAGE value="Added Tail" />
     <MESSAGE value="Added Feet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Feet" />
+    <MESSAGE value="Added buttons to remove all objects from scene and close the program" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added buttons to remove all objects from scene and close the program" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
