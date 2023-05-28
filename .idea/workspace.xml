@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="Added buttons to remove all objects from scene and close the program">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/DrawingTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/DrawingTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/Tail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Tail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/Upperbody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Upperbody.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +106,7 @@
       <workItem from="1685188130396" duration="1054000" />
       <workItem from="1685189195885" duration="22000" />
       <workItem from="1685189227233" duration="16633000" />
+      <workItem from="1685291842730" duration="2414000" />
     </task>
     <task id="LOCAL-00001" summary="added legs">
       <created>1684344631681</created>

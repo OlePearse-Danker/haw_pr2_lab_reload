@@ -20,12 +20,16 @@ public class DrawingTool extends JFrame implements ActionListener {
         splitPane.setDividerLocation(900);
 
         //constructDrawingArea();
-        drawing = new DrawingArea();
+        this.drawing = new DrawingArea();
 
         // Add new panel to the frame
         JPanel gUIPanel = new JPanel();
         gUIPanel.setBounds(0, 500, 300, 60);
         gUIPanel.setBackground(Color.BLACK);
+
+        JLabel menuLabel = new JLabel("Menu");
+        menuLabel.setForeground(Color.WHITE);
+        gUIPanel.add(menuLabel);
 
         // Add new button to the panel
         JButton add_button = new JButton("Add new Cat");
@@ -52,6 +56,29 @@ public class DrawingTool extends JFrame implements ActionListener {
             drawing.repaint(); // calls paintComponent, otherwise the cats would not be drawn
         });
         gUIPanel.add(remove_button);
+
+        JSlider bgColorSlider = new JSlider(JSlider.HORIZONTAL, 0, 255, 238);
+        bgColorSlider.setMajorTickSpacing(50);
+        bgColorSlider.setMinorTickSpacing(10);
+        bgColorSlider.setPaintTicks(true);
+        bgColorSlider.setPaintLabels(true);
+        bgColorSlider.addChangeListener(e -> {
+            System.out.println("--------");
+            System.out.println("Background color slider changed.");
+            Scene scene = drawing.getScene();
+            Color bgColor = new Color(bgColorSlider.getValue(), bgColorSlider.getValue(), bgColorSlider.getValue());
+            scene.setBackgroundColor(bgColor);
+
+            // Get all cats
+            for (Cat cat : scene.getAllCats()) {
+                cat.getUpperbody().getTail().setBgColor(bgColor);
+            }
+            scene.draw();
+            System.out.println("--------");
+            drawing.revalidate(); // revalidates the panel
+            drawing.repaint(); // calls paintComponent, otherwise the cats would not be drawn
+        });
+        gUIPanel.add(bgColorSlider);
 
         /**
          * Add new button to the panel

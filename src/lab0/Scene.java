@@ -15,7 +15,10 @@ public class Scene {
 
     private int catCount;
 
+    private Color bgColor;
+
     public Scene() {
+
         // Initialize the "cats" ArrayList
         this.cats = new ArrayList<Cat>();
 
@@ -30,6 +33,9 @@ public class Scene {
         for (int i = 0; i < catsToDraw; i++) {
             this.addCat();
         }
+
+        // Set background color
+        this.bgColor = new Color(238, 238, 238);
     }
 
     // Method to add a new cat to the scene
@@ -81,6 +87,10 @@ public class Scene {
     }
 
     public void draw() {
+        // Draw fullscreen bg
+        Drawing.pen().setColor(this.bgColor);
+        Drawing.pen().fillRect(0, 0, ScreenInterface.getScreenSize().width, ScreenInterface.getScreenSize().height);
+
         System.out.println("Draw scene.");
         System.out.println("Cat count: " + this.cats.size());
 
@@ -138,6 +148,14 @@ public class Scene {
     public void removeAllCats() {
         System.out.println("Remove all cats.");
         this.cats.clear();
+    }
+
+    public ArrayList<Cat> getAllCats() {
+        return this.cats;
+    }
+
+    public void setBackgroundColor(Color color) {
+        this.bgColor = color;
     }
 }
 

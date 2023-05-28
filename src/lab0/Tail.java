@@ -4,9 +4,12 @@ import java.awt.*;
 
 public class Tail extends BoundingBox {
 
-    private Color tailColor1 = new Color(238,238,238);
-    private Color tailColor2 = Color.BLACK;
+    private Color bgColor;
+    private Color tailColor2;
+
     public Tail(int x, int y, int width, int height) {
+        this.bgColor = new Color(238,238,238);
+        this.tailColor2 = Color.BLACK;
 
         this.setWidth(width);
         this.setHeight(height);
@@ -24,7 +27,7 @@ public class Tail extends BoundingBox {
 
         Drawing.pen().setColor(tailColor2);
         Drawing.pen().fillArc(x, y, width, height, 0, 90);
-        Drawing.pen().setColor(tailColor1);
+        Drawing.pen().setColor(bgColor);
         Drawing.pen().fillArc(x, (int) (y + 0.1 * height), width, height, 0, 90);
 
 
@@ -32,6 +35,21 @@ public class Tail extends BoundingBox {
         //this.drawBoundingBox();
     }
 
+    public void setTailColor(Color color) {
+        this.tailColor2 = color;
+    }
+
+    public Color getTailColor() {
+        return this.tailColor2;
+    }
+
+    public void setBgColor(Color color) {
+        this.bgColor = color;
+    }
+
+    public Color getBgColor() {
+        return this.bgColor;
+    }
 }
 
 

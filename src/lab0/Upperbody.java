@@ -45,4 +45,8 @@ public class Upperbody extends BoundingBox{
         // drawing the bounding box
         this.drawBoundingBox();
     }
+
+    public Tail getTail() {
+        return this.tail;
+    }
 }

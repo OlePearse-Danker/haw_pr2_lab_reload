@@ -72,6 +72,10 @@ public class Cat extends Animal implements LocatedRectangle{
         this.drawBoundingBox();
     }
 
+    public Upperbody getUpperbody() {
+        return this.upperbody;
+    }
+
     @Override
     public Point address() {
         return this.getCoordinates();
