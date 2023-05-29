@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="Added buttons to remove all objects from scene and close the program">
+      <change afterPath="$PROJECT_DIR$/src/lab0/ColorSlider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <list id="e2a0e162-629b-4c05-b426-5c3d06b74d5f" name="Changes by christopherklix" comment="">
       <change beforePath="$PROJECT_DIR$/src/lab0/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Cat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab0/DrawingTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/DrawingTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/Leg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Leg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab0/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Scene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab0/Tail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Tail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab0/Upperbody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Upperbody.java" afterDir="false" />
@@ -106,7 +109,8 @@
       <workItem from="1685188130396" duration="1054000" />
       <workItem from="1685189195885" duration="22000" />
       <workItem from="1685189227233" duration="16633000" />
-      <workItem from="1685291842730" duration="2414000" />
+      <workItem from="1685291842730" duration="2788000" />
+      <workItem from="1685388689091" duration="5076000" />
     </task>
     <task id="LOCAL-00001" summary="added legs">
       <created>1684344631681</created>
@@ -185,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685211247294</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added buttons to remove all objects from scene and close the program">
+      <created>1685294515428</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1685294515428</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
