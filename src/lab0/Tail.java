@@ -11,9 +11,10 @@ public class Tail extends BoundingBox {
         this.bgColor = new Color(238,238,238);
         this.tailColor2 = Color.BLACK;
 
-        this.setWidth(width);
+        this.setWidth(2 * width);
         this.setHeight(height);
-        this.setCoordinates(new Point(x, y));
+        int tailX = (int) (x - (0.5 * this.getWidth()));
+        this.setCoordinates(new Point(tailX, y));
     }
 
     public void draw() {
@@ -32,7 +33,7 @@ public class Tail extends BoundingBox {
 
 
         // drawing the bounding box
-        //this.drawBoundingBox();
+        this.drawBoundingBox();
     }
 
     public void setTailColor(Color color) {

@@ -157,6 +157,10 @@ public class Scene {
     public void setBackgroundColor(Color color) {
         this.bgColor = color;
     }
+
+    public Color getBackgroundColor() {
+        return this.bgColor;
+    }
 }
 
 

@@ -7,6 +7,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * <h1>DrawingTool</h1>
+ */
 @SuppressWarnings("serial")
 public class DrawingTool extends JFrame implements ActionListener {
     private DrawingArea drawing;
@@ -45,7 +48,16 @@ public class DrawingTool extends JFrame implements ActionListener {
         });
         gUIPanel.add(add_button);
 
-        JButton remove_button = new JButton("Remove all");
+        /**
+         * <h2>Remove All Btn</h2>
+         *
+         * <p>
+         *     This button removes all cats when pressed.
+         * </p>
+         *
+         * @see {@link PrimaryButton}
+         */
+        PrimaryButton remove_button = new PrimaryButton("Remove all");
         remove_button.addActionListener(e -> {
             System.out.println("--------");
             System.out.println("Remove all button pressed.");
@@ -57,11 +69,9 @@ public class DrawingTool extends JFrame implements ActionListener {
         });
         gUIPanel.add(remove_button);
 
-        JSlider bgColorSlider = new JSlider(JSlider.HORIZONTAL, 0, 255, 238);
-        bgColorSlider.setMajorTickSpacing(50);
-        bgColorSlider.setMinorTickSpacing(10);
-        bgColorSlider.setPaintTicks(true);
-        bgColorSlider.setPaintLabels(true);
+        ColorSlider bgColorSlider = new ColorSlider();
+        bgColorSlider.setCurrentValue(drawing.getScene().getBackgroundColor().getRed());
+
         bgColorSlider.addChangeListener(e -> {
             System.out.println("--------");
             System.out.println("Background color slider changed.");

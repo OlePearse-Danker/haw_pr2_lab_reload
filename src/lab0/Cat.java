@@ -21,6 +21,8 @@ public class Cat extends Animal implements LocatedRectangle{
 
     private Color primaryColor;
 
+    private final double boundingBoxRatio = 5./9.;
+
     public Cat(int x, int y, int width) {
 
         this.setWidth(width);
@@ -34,28 +36,30 @@ public class Cat extends Animal implements LocatedRectangle{
         this.headHeight = this.headWidth;
         this.head = new Head(x, y + (int) (headHeight/3.), headWidth, headHeight);
 
-        final int tailSpacingPlacerholder = (int) (this.getWidth() * 0.2);
+        final int tailSpacingPlacerholder = (int) (this.getWidth() * 0.3);
         this.upperbodyWidth = this.getWidth() - headWidth/2 - tailSpacingPlacerholder;
         this.upperbodyHeight = (int) (this.getHeight() * 0.5);
 
         final int bodyOffsetY = (int) (this.head.getCoordinates().getY() + (this.head.getHeight() * 1./3.));
-        this.upperbody = new Upperbody(x + headWidth/2, bodyOffsetY, upperbodyWidth, upperbodyHeight);
+        this.upperbody = new Upperbody(x + headWidth/2, bodyOffsetY, upperbodyWidth, upperbodyHeight, tailSpacingPlacerholder);
         this.upperbody.setPrimaryColor(this.primaryColor);
 
         this.legsWidth = (int) (this.getWidth() * 0.07);
         this.legsHeight = (int) (this.getHeight() * 0.22);
+        int legStartY = this.upperbody.getCoordinates().y + (int ) (this.upperbody.getHeight() * 0.9);
+        int legHeightTillBoundBox = this.getCoordinates().y + this.getHeight() - legStartY;
 
         final int legOffsetY = (int) (this.upperbody.getCoordinates().getY() + (this.upperbody.getHeight() * 0.9));
 
         // right leg
-        this.Rightleg = new Leg((int) (x + upperbodyWidth * 0.45), legOffsetY, legsWidth, legsHeight);
+        this.Rightleg = new Leg((int) (x + upperbodyWidth * 0.45), legStartY, legsWidth, legHeightTillBoundBox);
 
         // left leg
-        this.Leftleg = new Leg((int) (x + upperbodyWidth * 0.85), legOffsetY, legsWidth, legsHeight);
+        this.Leftleg = new Leg((int) (x + upperbodyWidth * 0.85), legStartY, legsWidth, legHeightTillBoundBox);
     }
 
     public void calculateAndSetHeight() {
-        int height = (int) (this.getWidth() * 5./7.);
+        int height = (int) (this.getWidth() * this.boundingBoxRatio);
         this.setHeight(height);
     }
 

@@ -17,8 +17,9 @@ public class Leg extends BoundingBox {
         this.setCoordinates(new Point(x, y));
 
         this.footWidth = (int) (width * 1.525);
-        this.footHeight = height / 3;
-        this.Feet = new Foot ((int) (x - 0.5 * width), (int) (y + 0.85 * height), footWidth, footHeight);
+        this.footHeight = (int) (height * 0.2);
+        int footY = y + height - footHeight;
+        this.Feet = new Foot ((int) (x - 0.5 * width), footY, footWidth, footHeight);
 
     }
 
