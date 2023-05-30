@@ -129,10 +129,10 @@ public class DrawingTool extends JFrame implements ActionListener {
          */
 
         // Button via ActionListener
-        JButton stupidBtn = new JButton("Stupid");
-        stupidBtn.addActionListener(this);
-        stupidBtn.setActionCommand("stupid");
-        gUIPanel.add(stupidBtn);
+        JButton helloBtn = new JButton("Hello");
+        helloBtn.addActionListener(this);
+        helloBtn.setActionCommand("hello");
+        gUIPanel.add(helloBtn);
 
 
 
@@ -166,7 +166,7 @@ public class DrawingTool extends JFrame implements ActionListener {
 
         System.out.println(e.getActionCommand());
         // Say hello to the console if b is pressed
-        if (e.getActionCommand().equals("stupid")) {
+        if (e.getActionCommand().equals("hello")) {
             System.out.println("This is a button.");
         }
 

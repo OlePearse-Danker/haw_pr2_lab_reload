@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="added editable textfield to gui panel, without try and catch error">
+    <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="added editable textfield to gui panel, WITH try and catch error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab0/DrawingTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/DrawingTool.java" afterDir="false" />
     </list>
@@ -105,7 +105,7 @@
       <workItem from="1685291842730" duration="2788000" />
       <workItem from="1685388689091" duration="5407000" />
       <workItem from="1685394964373" duration="700000" />
-      <workItem from="1685427421971" duration="10115000" />
+      <workItem from="1685427421971" duration="10926000" />
     </task>
     <task id="LOCAL-00001" summary="added legs">
       <created>1684344631681</created>
@@ -212,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685436981042</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="added editable textfield to gui panel, WITH try and catch error">
+      <created>1685438100312</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1685438100312</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +261,8 @@
     <MESSAGE value="Added buttons to remove all objects from scene and close the program" />
     <MESSAGE value="Changes by christopherklix" />
     <MESSAGE value="added editable textfield to gui panel, without try and catch error" />
-    <option name="LAST_COMMIT_MESSAGE" value="added editable textfield to gui panel, without try and catch error" />
+    <MESSAGE value="added editable textfield to gui panel, WITH try and catch error" />
+    <option name="LAST_COMMIT_MESSAGE" value="added editable textfield to gui panel, WITH try and catch error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
