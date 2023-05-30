@@ -52,8 +52,14 @@ public class DrawingTool extends JFrame implements ActionListener {
             System.out.println("Add new cat button pressed.");
             Scene scene = drawing.getScene();
 
-            scene.addCats(Integer.parseInt(catNum.getText()));
-            scene.draw();
+            try {
+                scene.addCats(Integer.parseInt(catNum.getText()));
+            } catch (NumberFormatException ex) {
+                System.out.println("Please enter a valid number");
+            } finally { // nach dem try catch block wird finally immer ausgeführt
+                scene.draw();
+            }
+
             System.out.println("--------");
             drawing.revalidate(); // revalidates the panel
             drawing.repaint(); // calls paintComponent, otherwise the cats would not be drawn
@@ -163,7 +169,7 @@ public class DrawingTool extends JFrame implements ActionListener {
         if (e.getActionCommand().equals("stupid")) {
             System.out.println("This is a button.");
         }
-        //else if (e. .equals(""))
+
     }
 
     public static void main(String[] args) {

@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="Added buttons to remove all objects from scene and close the program">
+    <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="added editable textfield to gui panel, without try and catch error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/DrawingArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/DrawingArea.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab0/DrawingTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/DrawingTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/Head.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Head.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/LocatedRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/LocatedRectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Scene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/Tail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Tail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/Upperbody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Upperbody.java" afterDir="false" />
     </list>
     <list id="e2a0e162-629b-4c05-b426-5c3d06b74d5f" name="Changes by christopherklix" comment="Changes by christopherklix" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +105,7 @@
       <workItem from="1685291842730" duration="2788000" />
       <workItem from="1685388689091" duration="5407000" />
       <workItem from="1685394964373" duration="700000" />
-      <workItem from="1685427421971" duration="8983000" />
+      <workItem from="1685427421971" duration="10115000" />
     </task>
     <task id="LOCAL-00001" summary="added legs">
       <created>1684344631681</created>
@@ -212,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685394143954</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="added editable textfield to gui panel, without try and catch error">
+      <created>1685436981042</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1685436981042</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +253,8 @@
     <MESSAGE value="Added Feet" />
     <MESSAGE value="Added buttons to remove all objects from scene and close the program" />
     <MESSAGE value="Changes by christopherklix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes by christopherklix" />
+    <MESSAGE value="added editable textfield to gui panel, without try and catch error" />
+    <option name="LAST_COMMIT_MESSAGE" value="added editable textfield to gui panel, without try and catch error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
