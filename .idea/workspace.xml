@@ -5,17 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="Added buttons to remove all objects from scene and close the program">
-      <change afterPath="$PROJECT_DIR$/src/lab0/ColorSlider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-    <list id="e2a0e162-629b-4c05-b426-5c3d06b74d5f" name="Changes by christopherklix" comment="">
       <change beforePath="$PROJECT_DIR$/src/lab0/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/DrawingArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/DrawingArea.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab0/DrawingTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/DrawingTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/Leg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Leg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/Head.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Head.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/LocatedRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/LocatedRectangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab0/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Scene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab0/Tail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Tail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab0/Upperbody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Upperbody.java" afterDir="false" />
     </list>
+    <list id="e2a0e162-629b-4c05-b426-5c3d06b74d5f" name="Changes by christopherklix" comment="Changes by christopherklix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +72,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -110,7 +110,9 @@
       <workItem from="1685189195885" duration="22000" />
       <workItem from="1685189227233" duration="16633000" />
       <workItem from="1685291842730" duration="2788000" />
-      <workItem from="1685388689091" duration="5076000" />
+      <workItem from="1685388689091" duration="5407000" />
+      <workItem from="1685394964373" duration="700000" />
+      <workItem from="1685427421971" duration="8983000" />
     </task>
     <task id="LOCAL-00001" summary="added legs">
       <created>1684344631681</created>
@@ -196,7 +198,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685294515428</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added buttons to remove all objects from scene and close the program">
+      <created>1685394135877</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1685394135877</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Changes by christopherklix">
+      <created>1685394143954</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1685394143954</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +252,8 @@
     <MESSAGE value="Added Tail" />
     <MESSAGE value="Added Feet" />
     <MESSAGE value="Added buttons to remove all objects from scene and close the program" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added buttons to remove all objects from scene and close the program" />
+    <MESSAGE value="Changes by christopherklix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by christopherklix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

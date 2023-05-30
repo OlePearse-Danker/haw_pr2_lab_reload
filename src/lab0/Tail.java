@@ -33,7 +33,7 @@ public class Tail extends BoundingBox {
 
 
         // drawing the bounding box
-        this.drawBoundingBox();
+        // this.drawBoundingBox();
     }
 
     public void setTailColor(Color color) {

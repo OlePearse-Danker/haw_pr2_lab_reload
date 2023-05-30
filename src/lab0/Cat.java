@@ -63,6 +63,8 @@ public class Cat extends Animal implements LocatedRectangle{
         this.setHeight(height);
     }
 
+
+    @Override
     public void draw() {
 
         // coordinates for the upper_body
@@ -73,7 +75,7 @@ public class Cat extends Animal implements LocatedRectangle{
 
 
         // drawing the bounding box
-        this.drawBoundingBox();
+        // this.drawBoundingBox();
     }
 
     public Upperbody getUpperbody() {

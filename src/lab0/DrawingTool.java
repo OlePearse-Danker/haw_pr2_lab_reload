@@ -34,13 +34,25 @@ public class DrawingTool extends JFrame implements ActionListener {
         menuLabel.setForeground(Color.WHITE);
         gUIPanel.add(menuLabel);
 
+        //adding textfield/textarea for user to enter the number of the cats
+
+        JTextField catNumText = new JTextField("Enter the number of cats here");
+        catNumText.setEnabled(false);
+        gUIPanel.add(catNumText);
+
+        JTextField catNum = new JTextField("1");
+        gUIPanel.add(catNum);
+        //int a = Integer.getInteger(catNum.getText()); // get Integer from text field
+
+
         // Add new button to the panel
         JButton add_button = new JButton("Add new Cat");
         add_button.addActionListener(e -> {
             System.out.println("--------");
             System.out.println("Add new cat button pressed.");
             Scene scene = drawing.getScene();
-            scene.addCat();
+
+            scene.addCats(Integer.parseInt(catNum.getText()));
             scene.draw();
             System.out.println("--------");
             drawing.revalidate(); // revalidates the panel
@@ -96,11 +108,13 @@ public class DrawingTool extends JFrame implements ActionListener {
          * This button will close the program
          */
 
-        JButton closeBtn = new JButton("Close");
-        // Store lambda expression in variable
-        ActionListener closeBtnListener = e -> { this.exit(); };
-        closeBtn.addActionListener(closeBtnListener);
-        gUIPanel.add(closeBtn);
+        JButton closeBtn = new JButton("Close"); // Create a new JButton with the label "Close"
+        ActionListener closeBtnListener = e -> {    // Create a new ActionListener using a lambda expression and store it in closeBtnListener
+            this.exit();                            // Call the exit() method of the current object when the button is clicked
+        };
+
+        closeBtn.addActionListener(closeBtnListener);   // Add the ActionListener to the JButton
+        gUIPanel.add(closeBtn);                         // Add the JButton to a panel named gUIPanel
 
         /**
          * Add new button to the panel
@@ -113,6 +127,9 @@ public class DrawingTool extends JFrame implements ActionListener {
         stupidBtn.addActionListener(this);
         stupidBtn.setActionCommand("stupid");
         gUIPanel.add(stupidBtn);
+
+
+
 
         // Add panels to the split pane
         splitPane.setTopComponent(drawing);
@@ -140,12 +157,13 @@ public class DrawingTool extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        // TODO Auto-generated method stub
 
+        System.out.println(e.getActionCommand());
         // Say hello to the console if b is pressed
         if (e.getActionCommand().equals("stupid")) {
-            System.out.println("This is stupid.");
+            System.out.println("This is a button.");
         }
+        //else if (e. .equals(""))
     }
 
     public static void main(String[] args) {

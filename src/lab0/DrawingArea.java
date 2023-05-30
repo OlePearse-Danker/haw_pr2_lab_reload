@@ -22,7 +22,7 @@ public class DrawingArea extends JPanel {
     private Scene scene;
 
     public DrawingArea() {
-        super();
+        super(); // initalizes the jpanel with deafult settings
         this.scene = new Scene();
     }
 

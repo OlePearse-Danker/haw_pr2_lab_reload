@@ -30,9 +30,8 @@ public class Scene {
         // Add n cats
         int catsToDraw = 30;
 
-        for (int i = 0; i < catsToDraw; i++) {
-            this.addCat();
-        }
+        this.addCats(catsToDraw);
+
 
         // Set background color
         this.bgColor = new Color(238, 238, 238);
@@ -46,7 +45,7 @@ public class Scene {
         int y = RandomNumber.between(0, screenSize.height);
 
         // change this to set size of cat
-        int width = RandomNumber.between(100, 200);
+        int width = RandomNumber.between(100, 300);
 
         // Create a new Cat object with the random position and size;
         Cat newCat = new Cat(x, y, width);
@@ -142,6 +141,13 @@ public class Scene {
                 cat.draw();
                 drawnCats.add(cat);
             }
+        }
+
+    }
+
+    public void addCats(int catNum) {
+        for (int i = 0; i < catNum; i++) {
+            this.addCat();
         }
     }
 

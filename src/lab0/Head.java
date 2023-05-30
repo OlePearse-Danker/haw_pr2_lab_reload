@@ -72,7 +72,7 @@ public class Head extends BoundingBox{
         mouth.draw();
 
         // drawing the bounding box
-        this.drawBoundingBox();
+        // this.drawBoundingBox();
     }
 
 }

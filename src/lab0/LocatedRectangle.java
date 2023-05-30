@@ -13,6 +13,7 @@ public interface LocatedRectangle {
     public Point address();
     public int width();
     public int height();
+    public void draw();
 
     public default boolean intersects(LocatedRectangle other) {
         return !doesNotIntersect(other, 0);
