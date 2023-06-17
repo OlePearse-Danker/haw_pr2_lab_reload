@@ -5,8 +5,12 @@ import com.sun.security.jgss.GSSUtil;
 import java.awt.*;
 import java.util.ArrayList;
 
+import lab0.graphicState.*;
+
 
 public class Scene {
+    private static State graphicState;
+    private String currentScene;
 
     // Declare a private ArrayList called "cats"
     private ArrayList<Cat> cats;
@@ -18,6 +22,10 @@ public class Scene {
     private Color bgColor;
 
     public Scene() {
+
+        graphicState = OutsideState.getInstance(this);
+        this.currentScene = "outside";
+        this.setState(this.currentScene);
 
         // Initialize the "cats" ArrayList
         this.cats = new ArrayList<Cat>();
@@ -34,7 +42,7 @@ public class Scene {
 
 
         // Set background color
-        this.bgColor = new Color(238, 238, 238);
+//        this.bgColor = new Color(238, 238, 238);
     }
 
     // Method to add a new cat to the scene
@@ -48,7 +56,7 @@ public class Scene {
         int width = RandomNumber.between(100, 300);
 
         // Create a new Cat object with the random position and size;
-        Cat newCat = new Cat(x, y, width);
+        Cat newCat = new Cat(x, y, width, this);
 
         // Center cat
         if (this.centerCat) {
@@ -63,7 +71,7 @@ public class Scene {
             x = (int) (centerX - (width / 2.));
             y = (int) (centerY - (height / 2.));
 
-            newCat = new Cat(x, y, width);
+            newCat = new Cat(x, y, width, this);
         }
 
         // Generate a new random color
@@ -166,6 +174,26 @@ public class Scene {
 
     public Color getBackgroundColor() {
         return this.bgColor;
+    }
+
+
+
+
+
+    // Set states
+
+    public void setState(String sceneType) {
+        this.currentScene = sceneType;
+
+        if (sceneType.equals("outside")) {
+            graphicState = graphicState.drawOutside();
+        } else if (sceneType.equals("inside")) {
+            graphicState = graphicState.drawInside();
+        }
+    }
+
+    public String getCurrentScene() {
+        return this.currentScene;
     }
 }
 

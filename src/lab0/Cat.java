@@ -21,9 +21,12 @@ public class Cat extends Animal implements LocatedRectangle{
 
     private Color primaryColor;
 
+    protected Scene context;
+
     private final double boundingBoxRatio = 5./9.;
 
-    public Cat(int x, int y, int width) {
+    public Cat(int x, int y, int width, Scene context) {
+        this.context = context;
 
         this.setWidth(width);
         this.calculateAndSetHeight();
@@ -41,7 +44,7 @@ public class Cat extends Animal implements LocatedRectangle{
         this.upperbodyHeight = (int) (this.getHeight() * 0.5);
 
         final int bodyOffsetY = (int) (this.head.getCoordinates().getY() + (this.head.getHeight() * 1./3.));
-        this.upperbody = new Upperbody(x + headWidth/2, bodyOffsetY, upperbodyWidth, upperbodyHeight, tailSpacingPlacerholder);
+        this.upperbody = new Upperbody(x + headWidth/2, bodyOffsetY, upperbodyWidth, upperbodyHeight, tailSpacingPlacerholder, this);
         this.upperbody.setPrimaryColor(this.primaryColor);
 
         this.legsWidth = (int) (this.getWidth() * 0.07);

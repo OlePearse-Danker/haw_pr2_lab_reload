@@ -8,7 +8,10 @@ public class Upperbody extends BoundingBox {
 
     private Tail tail;
 
-    public Upperbody(int x, int y, int width, int height, int tailSpacingPlacerholder) {
+    private Cat cat;
+
+    public Upperbody(int x, int y, int width, int height, int tailSpacingPlacerholder, Cat iBelongTo) {
+        this.cat = iBelongTo;
         this.setWidth(width);
         this.setHeight(height);
         this.setCoordinates(new Point(x, y));
@@ -18,7 +21,7 @@ public class Upperbody extends BoundingBox {
         int tailY = (int) (y + 0.45 * height);
         int tailW = tailSpacingPlacerholder;
         int tailH = height;
-        this.tail = new Tail(tailX, tailY, tailW, tailH);
+        this.tail = new Tail(tailX, tailY, tailW, tailH, this.cat);
 
     }
 

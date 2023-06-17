@@ -7,8 +7,11 @@ public class Tail extends BoundingBox {
     private Color bgColor;
     private Color tailColor2;
 
-    public Tail(int x, int y, int width, int height) {
-        this.bgColor = new Color(238,238,238);
+    private Cat cat;
+
+    public Tail(int x, int y, int width, int height, Cat iBelongTo) {
+        this.cat = iBelongTo;
+        this.bgColor = this.cat.context.getBackgroundColor();
         this.tailColor2 = Color.BLACK;
 
         this.setWidth(2 * width);

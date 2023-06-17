@@ -1,5 +1,3 @@
-
-
 package lab0;
 
 import javax.swing.*;
@@ -65,6 +63,23 @@ public class DrawingTool extends JFrame implements ActionListener {
             drawing.repaint(); // calls paintComponent, otherwise the cats would not be drawn
         });
         gUIPanel.add(add_button);
+
+        JButton toggleSceneBtn = new JButton("Change Location");
+        toggleSceneBtn.addActionListener(e -> {
+            Scene scene = drawing.getScene();
+            scene.setState(scene.getCurrentScene().equals("outside") ? "inside" : "outside");
+
+            Color bgColor = scene.getBackgroundColor();
+
+            // Get all cats
+            for (Cat cat : scene.getAllCats()) {
+                cat.getUpperbody().getTail().setBgColor(bgColor);
+            }
+
+            drawing.revalidate();
+            drawing.repaint();
+        });
+        gUIPanel.add(toggleSceneBtn);
 
         /**
          * <h2>Remove All Btn</h2>
@@ -133,8 +148,6 @@ public class DrawingTool extends JFrame implements ActionListener {
         helloBtn.addActionListener(this);
         helloBtn.setActionCommand("hello");
         gUIPanel.add(helloBtn);
-
-
 
 
         // Add panels to the split pane
