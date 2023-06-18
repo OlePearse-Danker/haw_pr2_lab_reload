@@ -4,9 +4,9 @@ For package lab0 by Ole Pearse-Danker
 
 ----
 
-<div style="display: flex;">
-    <img style="max-width: 50%; margin: auto;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Uml_classes_en.svg/600px-Uml_classes_en.svg.png"/>
-    <img style="max-width: 50%; margin: auto;" src="../../img/relation_explanation.jpg"/>
+<div style="display: grid; grid-template-columns: 1fr 1fr;">
+    <img style="margin: auto;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Uml_classes_en.svg/600px-Uml_classes_en.svg.png"/>
+    <img style="margin: auto;" src="../../img/relation_explanation.jpg"/>
 </div>
 
 ----
