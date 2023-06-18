@@ -29,8 +29,8 @@ class State {
     + drawInside() State
 }
 
-InsideState  -->  State
-OutsideState  -->  State
+InsideState  --|>  State
+OutsideState  --|>  State
 
 Scene *--> State
 
