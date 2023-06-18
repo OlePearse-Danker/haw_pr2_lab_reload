@@ -4,7 +4,10 @@ For package lab0 by Ole Pearse-Danker
 
 ----
 
-![Class diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Uml_classes_en.svg/600px-Uml_classes_en.svg.png)
+<div style="display: flex;">
+    <img style="max-width: 50%; margin: auto;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Uml_classes_en.svg/600px-Uml_classes_en.svg.png"/>
+    <img style="max-width: 50%; margin: auto;" src="../../img/relation_explanation.jpg"/>
+</div>
 
 ----
 
