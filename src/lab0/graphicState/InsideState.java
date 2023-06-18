@@ -7,6 +7,8 @@ import java.awt.*;
 public class InsideState extends State {
     private static InsideState instance = null;
 
+    private Color backgroundColor;
+
     private InsideState(Scene context) {
         this.context = context;
     }
@@ -21,7 +23,8 @@ public class InsideState extends State {
 
     @Override
     public State drawOutside() {
-        context.setBackgroundColor(Color.GREEN);
+        backgroundColor = new Color(107,142,35);
+        this.context.setBackgroundColor(backgroundColor);
         return OutsideState.getInstance(context);
     }
 
@@ -32,8 +35,10 @@ public class InsideState extends State {
     }
 
     @Override
-    public State drawPoop() {
+    public State drawOnlyPoop() {
+        context.removeAllCats();
         context.togglePoopMode();
         return PoopState.getInstance(context);
     }
+
 }

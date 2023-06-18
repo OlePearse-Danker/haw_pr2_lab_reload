@@ -7,6 +7,12 @@
     <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="added poopState">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab0/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/graphicState/InsideState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/graphicState/InsideState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/graphicState/OutsideState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/graphicState/OutsideState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/graphicState/PoopState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/graphicState/PoopState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/graphicState/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/graphicState/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/graphicState/uml.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/graphicState/uml.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab0/uml.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/uml.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +144,7 @@
       <workItem from="1686651466365" duration="1260000" />
       <workItem from="1686994312967" duration="8266000" />
       <workItem from="1687079327323" duration="6342000" />
-      <workItem from="1687085713059" duration="11737000" />
+      <workItem from="1687085713059" duration="16044000" />
     </task>
     <task id="LOCAL-00001" summary="added legs">
       <created>1684344631681</created>
@@ -280,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687096787816</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="added poopState">
+      <created>1687097581125</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1687097581125</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

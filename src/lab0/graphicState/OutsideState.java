@@ -8,6 +8,8 @@ public class OutsideState extends State {
     private static OutsideState instance = null;
     private Scene context;
 
+    private Color backgroundColor;
+
     private OutsideState(Scene context) {
         this.context = context;
     }
@@ -22,7 +24,8 @@ public class OutsideState extends State {
 
     @Override
     public State drawOutside() {
-        this.context.setBackgroundColor(Color.GREEN);
+        backgroundColor = new Color(107,142,35);
+        this.context.setBackgroundColor(backgroundColor);
         return this;
     }
 
@@ -33,8 +36,10 @@ public class OutsideState extends State {
     }
 
     @Override
-    public State drawPoop() {
+    public State drawOnlyPoop() {
+        context.removeAllCats();
         context.togglePoopMode();
         return PoopState.getInstance(context);
     }
+
 }

@@ -12,5 +12,6 @@ public abstract class State {
 
     public abstract State drawOutside();
     public abstract State drawInside();
-    public abstract State drawPoop();
+    public abstract State drawOnlyPoop();
+
 }

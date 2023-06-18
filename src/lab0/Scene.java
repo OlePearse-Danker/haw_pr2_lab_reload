@@ -220,13 +220,14 @@ public class Scene {
         } else if (sceneType.equals("inside")) {
             graphicState = graphicState.drawInside();
         } else if (sceneType.equals("poop")) {
-            graphicState = graphicState.drawPoop();
+            graphicState = graphicState.drawOnlyPoop();
         }
     }
 
     public String getCurrentScene() {
         return this.currentScene;
     }
+
 }
 
 

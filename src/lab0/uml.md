@@ -15,31 +15,42 @@ For package lab0 by Ole Pearse-Danker
 classDiagram
 direction BT
 
-class InsideState {
-    - InsideState instance
-    + getInstance(Scene) InsideState
-    + drawInside() State
-    + drawOutside() State
-}
+    class InsideState {
+        - InsideState instance
+        + getInstance(Scene) InsideState
+        + drawInside() State
+        + drawPoop() State
+        + drawOutside() State
+    }
+    class OutsideState {
+        - OutsideState instance
+        + drawOutside() State
+        + drawInside() State
+        + drawPoop() State
+        + getInstance(Scene) OutsideState
+    }
+    class PoopState {
+        - PoopState instance
+        + drawPoop() State
+        + drawOutside() State
+        + drawInside() State
+        + getInstance(Scene) PoopState
+    }
 
-class OutsideState {
-    - OutsideState instance
-    + drawOutside() State
-    + drawInside() State
-    + getInstance(Scene) OutsideState
-}
+    class State {
+        <<abstract>>
+        # Scene context
+        # OutsideState outside
+        # InsideState inside
+        # PoopState poop
+        + abstract drawOutside() State
+        + abstract drawInside() State
+        + abstract drawPoop() State
+    }
 
-class State {
-    <<abstract>>
-    # Scene context
-    # OutsideState outside
-    # InsideState inside
-    + abstract drawOutside() State
-    + abstract drawInside() State
-}
-
-InsideState  --|>  State
-OutsideState  --|>  State
+    InsideState  --|>  State
+    OutsideState  --|>  State
+    PoopState --|> State
 
 Scene *--> State
 

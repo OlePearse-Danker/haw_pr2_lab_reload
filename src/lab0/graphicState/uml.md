@@ -19,17 +19,26 @@ class OutsideState {
   + drawInside() State
   + getInstance(Scene) OutsideState
 }
+class PoopState {
+    - PoopState instance
+    + drawOutside() State
+    + drawInside() State
+    + getInstance(Scene) PoopState
+}
 
 class State {
     <<abstract>>
   # Scene context
   # OutsideState outside
   # InsideState inside
+  # PoopState poop
   + abstract drawOutside() State
   + abstract drawInside() State
+  + abstract drawPoop() State
 }
 
 InsideState  --|>  State 
 OutsideState  --|>  State 
+PoopState --|> State
 
 ````
