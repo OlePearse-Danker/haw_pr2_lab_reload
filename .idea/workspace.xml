@@ -4,29 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="added editable textfield to gui panel, WITH try and catch error">
-      <change afterPath="$PROJECT_DIR$/src/lab0/graphicState/InsideState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab0/graphicState/OutsideState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab0/graphicState/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/statePattern/APICallContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/statePattern/APICallState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/statePattern/APICallTarget.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/statePattern/APICallWithStateDesignPattern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/statePattern/APICallWithoutStateDesignPattern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/statePattern/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/statePattern/apiStates/APICallFroniusState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/statePattern/apiStates/APICallHuaweiState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/statePattern/apiStates/APICallSMAState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/statePattern/apiStates/APICallTestState.java" afterDir="false" />
+    <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="added states">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/DrawingTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/DrawingTool.java" afterDir="false" />
-    </list>
-    <list id="e2a0e162-629b-4c05-b426-5c3d06b74d5f" name="Changes by christopherklix" comment="Changes by christopherklix">
-      <change beforePath="$PROJECT_DIR$/src/lab0/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/DrawingTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/DrawingTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Scene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/Tail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Tail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/Upperbody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Upperbody.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,15 +41,6 @@
         <option name="url" value="https://github.com/OlePearse-Danker/haw_pr2_lab_reload.git" />
       </UrlAndAccount>
     </option>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/lab0/DrawingTool.java">
-      <ranges>
-        <range start1="0" end1="2" start2="0" end2="0" changelist="e2a0e162-629b-4c05-b426-5c3d06b74d5f" />
-        <range start1="67" end1="67" start2="65" end2="82" changelist="e2a0e162-629b-4c05-b426-5c3d06b74d5f" />
-        <range start1="137" end1="139" start2="152" end2="152" changelist="d0255374-cd20-4468-8280-a88412558541" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -138,7 +108,8 @@
       <workItem from="1685443964869" duration="179000" />
       <workItem from="1685445875643" duration="244000" />
       <workItem from="1686651466365" duration="1260000" />
-      <workItem from="1686994312967" duration="8009000" />
+      <workItem from="1686994312967" duration="8266000" />
+      <workItem from="1687079327323" duration="294000" />
     </task>
     <task id="LOCAL-00001" summary="added legs">
       <created>1684344631681</created>
@@ -302,7 +273,8 @@
     <MESSAGE value="Changes by christopherklix" />
     <MESSAGE value="added editable textfield to gui panel, without try and catch error" />
     <MESSAGE value="added editable textfield to gui panel, WITH try and catch error" />
-    <option name="LAST_COMMIT_MESSAGE" value="added editable textfield to gui panel, WITH try and catch error" />
+    <MESSAGE value="added states" />
+    <option name="LAST_COMMIT_MESSAGE" value="added states" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
