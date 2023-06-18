@@ -10,6 +10,7 @@ class Animal {
   + eat() void
 }
 class BoundingBox {
+    <<abstract>>
   - Point coordinates
   - int width
   - int height
@@ -48,7 +49,7 @@ class ColorSlider {
   + setCurrentValue(int) void
 }
 class Drawing {
-  ~ Graphics pen
+  - Graphics pen
   + set(Graphics) void
   + pen() Graphics
 }
