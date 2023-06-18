@@ -2,6 +2,7 @@ package lab0;
 
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Random;
 
 import lab0.graphicState.*;
 
@@ -178,7 +179,10 @@ public class Scene {
 
     public void addPoops(int poopNum) {
         for (int i = 0; i < poopNum; i++) {
-            Poop poop = new Poop(200, 200, 50, this);
+            int x = RandomNumber.between(0, 1200);
+            int y = RandomNumber.between(0, 1200);
+
+            Poop poop = new Poop(x, y, 50, this);
             this.poops.add(poop);
         }
     }

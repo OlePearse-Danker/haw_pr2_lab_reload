@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="added explanations to uml">
-      <change afterPath="$PROJECT_DIR$/src/lab0/Poop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab0/PoopLayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab0/graphicState/PoopState.java" afterDir="false" />
+    <list default="true" id="d0255374-cd20-4468-8280-a88412558541" name="Changes" comment="added poopState">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/DrawingTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/DrawingTool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab0/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/Scene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/graphicState/InsideState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/graphicState/InsideState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/graphicState/OutsideState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/graphicState/OutsideState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab0/graphicState/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab0/graphicState/State.java" afterDir="false" />
     </list>
-    <list id="6ebe0eb5-0981-4fbf-b0fa-fb3208bbcc37" name="Changes by christopherklix" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +138,7 @@
       <workItem from="1686651466365" duration="1260000" />
       <workItem from="1686994312967" duration="8266000" />
       <workItem from="1687079327323" duration="6342000" />
-      <workItem from="1687085713059" duration="11010000" />
+      <workItem from="1687085713059" duration="11737000" />
     </task>
     <task id="LOCAL-00001" summary="added legs">
       <created>1684344631681</created>
@@ -281,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687087842768</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="added poopState">
+      <created>1687096787816</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1687096787816</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +325,8 @@
     <MESSAGE value="added editable textfield to gui panel, WITH try and catch error" />
     <MESSAGE value="added states" />
     <MESSAGE value="added explanations to uml" />
-    <option name="LAST_COMMIT_MESSAGE" value="added explanations to uml" />
+    <MESSAGE value="added poopState" />
+    <option name="LAST_COMMIT_MESSAGE" value="added poopState" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
