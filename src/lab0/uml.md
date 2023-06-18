@@ -5,6 +5,36 @@ Made with Mermaid.
 ````mermaid
 classDiagram
 direction BT
+
+namespace foo {
+    class InsideState {
+    - InsideState instance
+    + getInstance(Scene) InsideState
+    + drawInside() State
+    + drawOutside() State
+    }
+}
+
+class OutsideState {
+- OutsideState instance
++ drawOutside() State
++ drawInside() State
++ getInstance(Scene) OutsideState
+}
+
+class State {
+<<abstract>>
+# Scene context
+# OutsideState outside
+# InsideState inside
++ drawOutside() State
++ drawInside() State
+}
+
+InsideState  -->  State
+OutsideState  -->  State
+
+
 class Animal {
   + sleep() void
   + eat() void
@@ -216,6 +246,6 @@ Upperbody  -->  BoundingBox
 Upperbody "1" *--> "cat 1" Cat 
 Upperbody  ..>  Tail : «create»
 Upperbody "1" *--> "tail 1" Tail 
-Whisker  -->  BoundingBox 
+Whisker  -->  BoundingBox
 
 ````
