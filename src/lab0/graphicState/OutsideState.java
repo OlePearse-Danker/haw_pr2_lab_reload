@@ -31,4 +31,10 @@ public class OutsideState extends State {
         this.context.setBackgroundColor(Color.DARK_GRAY);
         return InsideState.getInstance(context);
     }
+
+    @Override
+    public State drawPoop() {
+        context.togglePoopMode();
+        return PoopState.getInstance(context);
+    }
 }

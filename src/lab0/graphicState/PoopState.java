@@ -1,19 +1,19 @@
-	package lab0.graphicState;
+package lab0.graphicState;
 
 import lab0.Scene;
 
 import java.awt.*;
 
-public class InsideState extends State {
-    private static InsideState instance = null;
+public class PoopState extends State {
+    private static PoopState instance = null;
 
-    private InsideState(Scene context) {
+    private PoopState(Scene context) {
         this.context = context;
     }
 
-    public static InsideState getInstance(Scene context) {
+    public static PoopState getInstance(Scene context) {
         if (instance == null) {
-            instance = new InsideState(context);
+            instance = new PoopState(context);
         }
 
         return instance;
@@ -28,12 +28,12 @@ public class InsideState extends State {
     @Override
     public State drawInside() {
         context.setBackgroundColor(Color.DARK_GRAY);
-        return this;
+        return InsideState.getInstance(context);
     }
 
     @Override
     public State drawPoop() {
         context.togglePoopMode();
-        return PoopState.getInstance(context);
+        return this;
     }
 }

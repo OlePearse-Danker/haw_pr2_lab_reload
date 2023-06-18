@@ -81,6 +81,23 @@ public class DrawingTool extends JFrame implements ActionListener {
         });
         gUIPanel.add(toggleSceneBtn);
 
+        JButton poopBtn = new JButton("Poop");
+        poopBtn.addActionListener(e -> {
+            Scene scene = drawing.getScene();
+            scene.setState("poop");
+
+            Color bgColor = scene.getBackgroundColor();
+
+            // Get all cats
+            for (Cat cat : scene.getAllCats()) {
+                cat.getUpperbody().getTail().setBgColor(bgColor);
+            }
+
+            drawing.revalidate();
+            drawing.repaint();
+        });
+        gUIPanel.add(poopBtn);
+
         /**
          * <h2>Remove All Btn</h2>
          *

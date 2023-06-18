@@ -1,7 +1,5 @@
 package lab0;
 
-import com.sun.security.jgss.GSSUtil;
-
 import java.awt.*;
 import java.util.ArrayList;
 
@@ -14,31 +12,38 @@ public class Scene {
 
     // Declare a private ArrayList called "cats"
     private ArrayList<Cat> cats;
+    private ArrayList<Poop> poops;
 
     private boolean centerCat;
 
     private int catCount;
+
+    private boolean poopMode;
 
     private Color bgColor;
 
     public Scene() {
 
         graphicState = OutsideState.getInstance(this);
-        this.currentScene = "outside";
+        this.currentScene = "inside";
         this.setState(this.currentScene);
 
         // Initialize the "cats" ArrayList
         this.cats = new ArrayList<Cat>();
+        this.poops = new ArrayList<Poop>();
 
         this.catCount = 0;
+        this.poopMode = false;
 
         // change this to true if you want to center the cat
         this.centerCat = false;
 
         // Add n cats
         int catsToDraw = 30;
+        int poopsToDraw = 30;
 
         this.addCats(catsToDraw);
+        this.addPoops(poopsToDraw);
 
 
         // Set background color
@@ -103,6 +108,10 @@ public class Scene {
 
         // Draw all cats
         this.drawCats();
+
+        if (this.poopMode) {
+            this.drawPoops();
+        }
     }
 
     private void drawCats() {
@@ -153,9 +162,24 @@ public class Scene {
 
     }
 
+    public void drawPoops() {
+        System.out.println("Scene.drawPoops();");
+        System.out.println("Poop count: " + this.poops.size());
+        for (Poop poop : this.poops) {
+            poop.draw();
+        }
+    }
+
     public void addCats(int catNum) {
         for (int i = 0; i < catNum; i++) {
             this.addCat();
+        }
+    }
+
+    public void addPoops(int poopNum) {
+        for (int i = 0; i < poopNum; i++) {
+            Poop poop = new Poop(200, 200, 50, this);
+            this.poops.add(poop);
         }
     }
 
@@ -177,7 +201,9 @@ public class Scene {
     }
 
 
-
+    public void togglePoopMode() {
+        this.poopMode = !this.poopMode;
+    }
 
 
     // Set states
@@ -189,6 +215,8 @@ public class Scene {
             graphicState = graphicState.drawOutside();
         } else if (sceneType.equals("inside")) {
             graphicState = graphicState.drawInside();
+        } else if (sceneType.equals("poop")) {
+            graphicState = graphicState.drawPoop();
         }
     }
 

@@ -8,7 +8,9 @@ public abstract class State {
 
     protected static OutsideState outside;
     protected static InsideState inside;
+    protected static PoopState poop;
 
     public abstract State drawOutside();
     public abstract State drawInside();
+    public abstract State drawPoop();
 }
