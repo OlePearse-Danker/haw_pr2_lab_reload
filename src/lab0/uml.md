@@ -174,7 +174,6 @@ class Upperbody {
 class Whisker {
   + draw() void
 }
-class node21
 
 Animal  -->  BoundingBox 
 Cat  -->  Animal 
