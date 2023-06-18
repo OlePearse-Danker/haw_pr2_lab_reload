@@ -32,7 +32,7 @@ class State {
 InsideState  -->  State
 OutsideState  -->  State
 
-Scene --> State
+Scene *--> State
 
 
 class Animal {
@@ -208,43 +208,43 @@ class Whisker {
 Animal  -->  BoundingBox 
 Cat  -->  Animal 
 Cat "1" *--> "head 1" Head 
-Cat  ..>  Head : «create»
+%% Cat  ..>  Head : «create»
 Cat "1" *--> "Rightleg 1" Leg 
-Cat  ..>  Leg : «create»
+%% Cat  ..>  Leg : «create»
 Cat  ..>  LocatedRectangle 
 Cat "1" *--> "context 1" Scene 
 Cat "1" *--> "upperbody 1" Upperbody 
-Cat  ..>  Upperbody : «create»
-DrawingArea  ..>  Grid : «create»
-DrawingArea  ..>  Scene : «create»
+%% Cat  ..>  Upperbody : «create»
+%% DrawingArea  ..>  Grid : «create»
+%% DrawingArea  ..>  Scene : «create»
 DrawingArea "1" *--> "scene 1" Scene 
-DrawingTool  ..>  ColorSlider : «create»
-DrawingTool  ..>  DrawingArea : «create»
+%% DrawingTool  ..>  ColorSlider : «create»
+%% DrawingTool  ..>  DrawingArea : «create»
 DrawingTool "1" *--> "drawing 1" DrawingArea 
-DrawingTool  ..>  PrimaryButton : «create»
+%% DrawingTool  ..>  PrimaryButton : «create»
 Ear  -->  BoundingBox 
 Eye  -->  BoundingBox 
 Foot  -->  BoundingBox 
 Head  -->  BoundingBox 
 Head "1" *--> "leftEar 1" Ear 
-Head  ..>  Ear : «create»
+%% Head  ..>  Ear : «create»
 Head "1" *--> "leftEye 1" Eye 
-Head  ..>  Eye : «create»
-Head  ..>  Mouth : «create»
+%% Head  ..>  Eye : «create»
+%% Head  ..>  Mouth : «create»
 Head "1" *--> "mouth 1" Mouth 
 Leg  -->  BoundingBox 
-Leg  ..>  Foot : «create»
+%% Leg  ..>  Foot : «create»
 Leg "1" *--> "Feet 1" Foot 
 Mouth  -->  BoundingBox 
-Mouth  ..>  Whisker : «create»
+%% Mouth  ..>  Whisker : «create»
 Mouth "1" *--> "whisker *" Whisker 
-Scene  ..>  Cat : «create»
+%% Scene  ..>  Cat : «create»
 Scene "1" *--> "cats *" Cat 
 Tail  -->  BoundingBox 
 Tail "1" *--> "cat 1" Cat 
 Upperbody  -->  BoundingBox 
 Upperbody "1" *--> "cat 1" Cat 
-Upperbody  ..>  Tail : «create»
+%% Upperbody  ..>  Tail : «create»
 Upperbody "1" *--> "tail 1" Tail 
 Whisker  -->  BoundingBox
 
