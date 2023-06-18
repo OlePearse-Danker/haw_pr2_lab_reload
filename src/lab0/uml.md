@@ -6,33 +6,33 @@ Made with Mermaid.
 classDiagram
 direction BT
 
-namespace foo {
-    class InsideState {
+class InsideState {
     - InsideState instance
     + getInstance(Scene) InsideState
     + drawInside() State
     + drawOutside() State
-    }
 }
 
 class OutsideState {
-- OutsideState instance
-+ drawOutside() State
-+ drawInside() State
-+ getInstance(Scene) OutsideState
+    - OutsideState instance
+    + drawOutside() State
+    + drawInside() State
+    + getInstance(Scene) OutsideState
 }
 
 class State {
-<<abstract>>
-# Scene context
-# OutsideState outside
-# InsideState inside
-+ drawOutside() State
-+ drawInside() State
+    <<abstract>>
+    # Scene context
+    # OutsideState outside
+    # InsideState inside
+    + drawOutside() State
+    + drawInside() State
 }
 
 InsideState  -->  State
 OutsideState  -->  State
+
+Scene --> State
 
 
 class Animal {
