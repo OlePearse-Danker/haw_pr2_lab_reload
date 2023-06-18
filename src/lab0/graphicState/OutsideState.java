@@ -6,6 +6,7 @@ import java.awt.*;
 
 public class OutsideState extends State {
     private static OutsideState instance = null;
+    private Scene context;
 
     private OutsideState(Scene context) {
         this.context = context;
@@ -21,13 +22,13 @@ public class OutsideState extends State {
 
     @Override
     public State drawOutside() {
-        context.setBackgroundColor(Color.GREEN);
+        this.context.setBackgroundColor(Color.GREEN);
         return this;
     }
 
     @Override
     public State drawInside() {
-        context.setBackgroundColor(Color.DARK_GRAY);
+        this.context.setBackgroundColor(Color.DARK_GRAY);
         return InsideState.getInstance(context);
     }
 }

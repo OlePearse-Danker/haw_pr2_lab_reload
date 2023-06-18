@@ -4,6 +4,10 @@ For package lab0 by Ole Pearse-Danker
 
 ----
 
+![Class diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Uml_classes_en.svg/600px-Uml_classes_en.svg.png)
+
+----
+
 ````mermaid
 classDiagram
 direction BT
