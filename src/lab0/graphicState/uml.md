@@ -25,8 +25,8 @@ class State {
   # Scene context
   # OutsideState outside
   # InsideState inside
-  + drawOutside() State
-  + drawInside() State
+  + abstract drawOutside() State
+  + abstract drawInside() State
 }
 
 InsideState  --|>  State 
