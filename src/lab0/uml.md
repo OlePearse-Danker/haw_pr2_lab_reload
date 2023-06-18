@@ -1,6 +1,8 @@
 # UML Diagram
 
-Made with Mermaid.
+For package lab0 by Ole Pearse-Danker
+
+----
 
 ````mermaid
 classDiagram
